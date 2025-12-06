@@ -21,7 +21,7 @@ if not GOOGLE_API_KEY:
     raise ValueError("Chưa cấu hình GOOGLE_API_KEY trên server!")
 
 genai.configure(api_key=GOOGLE_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-pro')
 
 @app.get("/") # Hàm này để giảng viên bấm vào link check xem server sống hay chết
 def home():
